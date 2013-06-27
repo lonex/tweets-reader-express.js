@@ -1,0 +1,18 @@
+{
+  "name": "tweets_reader",
+  "description": "A twitter feed reader",
+  "version": "0.1.0",
+  "author": "Lonex <stonelonely@gmail.com>",
+  "repository": "[omitted]",
+  "main": "server",
+  "dependencies": { 
+     "express": "2.3.4", 
+     "connect": "1.4.1",
+     "request": "1.9.5",
+     "connect-redis": "1.0.7",
+     "jade": "0.13.0",
+     "log4js": "0.2.5",
+     "twitter": "0.1.17"
+   },
+  "engines": { "node": ">= 0.4.7" }
+}

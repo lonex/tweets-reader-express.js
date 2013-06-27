@@ -1,0 +1,42 @@
+
+mixin tweet_item(item)
+  div.tweet
+    div.left
+      //- img
+    div.right
+      div.name 
+        //- name 
+      div.text #{item.text}
+      div.date 
+        //- date
+
+
+h3 Tweets Reader
+
+div#topics
+  <input type="button" value="Add Topic" onclick="addRow('topicTable')" />
+  <input type="button" value="Remove Topic(s)" onclick="deleteRow('topicTable')" />
+  table#topicTable(border="1")
+    tr
+      th Remove Topic
+      th Selected Topics
+      th Topic (Hashtag, Mention, etc.)
+    - each term in terms 
+      tr
+        td
+          input(type='checkbox', name='delete_topic')
+        td
+          <input type='checkbox' class='select_topic' name='select_topic' onclick="select_topic(this);"/>
+        td
+          input(type='text', name='topic_text', value="#{term}")
+
+  <input type="button" value="Get tweets" onclick="loadTweets();" />
+
+div#tweets
+
+script
+  var myTweet = new TweetClass($("#tweets"), '#{streamUrl}');
+  myTweet.setLastTweet({ created_at: '1 Jan 1970', from_user_id: 0});
+  //$(function(){
+  //    setTimeout(loadTweets, 1000);
+  //});

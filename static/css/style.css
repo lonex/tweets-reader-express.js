@@ -1,0 +1,92 @@
+div#content {
+	
+}
+
+div#tweets {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #999999;
+  height: 400px;
+  margin-top: -16px;
+  overflow: auto;
+  width: 490px;
+  -moz-border-radius: 4px 4px 4px 4px;
+	position: relative;
+	float:left;
+}
+
+div#topics {
+	height: 100px;
+	float: left;
+  height: 100px;
+  margin-right: 20px;
+  width: 300px;
+}
+
+table#topicTable {
+	width: 300px;
+}
+
+div.tweet {
+  border-bottom: 1px solid #EBEBEB;
+  min-height: 95px;
+  padding: 5px 5px 8px;
+  position: relative;
+  width: 460px;
+}
+
+div.tweet:hover {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #eeeeee;
+}
+
+div.tweet .left {
+  float: left;
+}
+
+div.tweet .right {
+  float: right;
+  width: 405px;
+}
+
+div.tweet .profile_image {
+  padding-top: 5px;
+}
+
+div.tweet .name {
+  font: 0.75em 'Lucida Grande',sans-serif;
+  font-weight: bold;	
+  line-height: 18px;
+  padding: 0;
+  word-wrap: break-word;	
+}
+
+div.tweet .text {
+  color: #444444;
+  display: inline;
+  font-family: Arial,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+div.tweet .date {
+	font-family: verdana,arial;
+  font-size: 0.8em;
+  margin-top: 3px;
+  display: block;
+}
+
+.text a, .name a:hover {
+  color: #0084B4;
+  text-decoration:none;
+}
+
+.text a.hash_tag, .text a.a_tag, .text a.link {
+  color: #888;	
+}
+
+.name a {
+	color: #333333;
+	text-decoration: none;
+}
